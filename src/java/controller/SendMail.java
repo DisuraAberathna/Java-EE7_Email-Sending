@@ -21,7 +21,8 @@ public class SendMail extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String email = req.getParameter("email");
+        String email = "disura005@gmail.com";
+        System.out.println(email);
         Mail.sendMail(email, "Hello", "Thank You For Joining");
     }
 
